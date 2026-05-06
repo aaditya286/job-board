@@ -1,0 +1,9 @@
+POST http://localhost:8080/api/jobs
+Content-Type: application/json
+
+{
+  "title": "Java Developer Intern",
+  "company": "TechNova",
+  "location": "Bangalore",
+  "description": "Spring Boot internship role"
+}
