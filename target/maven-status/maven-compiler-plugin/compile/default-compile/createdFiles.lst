@@ -1,0 +1,6 @@
+com\jobboard\repository\JobRepository.class
+com\jobboard\controller\JobController.class
+com\jobboard\JobBoardApplication.class
+com\jobboard\model\Job.class
+com\jobboard\controller\BaseController.class
+com\jobboard\service\BaseService.class
