@@ -1,6 +1,7 @@
 package com.jobboard.model;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
 
 @Entity
 @Table(name = "jobs")
@@ -11,12 +12,15 @@ public class Job {
     private Long id;
 
     @Column(nullable = false)
+    @NotBlank
     private String title;
 
     @Column(nullable = false)
+    @NotBlank
     private String company;
 
     @Column(nullable = false)
+    @NotBlank
     private String location;
 
     @Column(columnDefinition = "TEXT")

@@ -1,0 +1,31 @@
+### Create a job first
+POST http://localhost:8082/api/jobs
+Content-Type: application/json
+
+{
+  "title": "",
+  "company": "",
+  "location": "",
+  "description": "role"
+}
+
+###
+
+### Update the job (assuming it gets ID 1)
+PUT http://localhost:8082/api/jobs/1
+Content-Type: application/json
+
+{
+  "title": "Senior Java Developer",
+  "company": "Infosys",
+  "location": "Bangalore",
+  "description": "Updated job description"
+}
+
+###
+
+### Get all jobs to verify
+GET http://localhost:8082/api/jobs
+
+####
+DELETE http://localhost:8082/api/jobs/2

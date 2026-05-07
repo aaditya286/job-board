@@ -7,3 +7,7 @@ Content-Type: application/json
   "location": "Bangalore",
   "description": "Spring Boot internship role"
 }
+
+###
+
+DELETE http://localhost:8080/api/jobs/1
