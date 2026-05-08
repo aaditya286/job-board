@@ -1,37 +1,32 @@
-### Create a job first
+### Test all endpoints after search fix
+
+### Get all jobs (now at /api/jobs/)
+GET http://localhost:8082/api/jobs/
+
+### Create a job
 POST http://localhost:8082/api/jobs
 Content-Type: application/json
 
 {
   "title": "Java Developer",
-  
-
   "company": "TechCorp",
   "location": "Bangalore",
   "description": "Java development role"
 }
 
-###
+### Search for jobs
+GET http://localhost:8082/api/jobs/search?keyword=java
 
-### Update the job (assuming it gets ID 1)
+### Update job (assuming ID 1)
 PUT http://localhost:8082/api/jobs/1
 Content-Type: application/json
 
 {
-  
   "title": "Senior Java Developer",
   "company": "Infosys",
   "location": "Bangalore",
   "description": "Updated job description"
 }
 
-###
-
-### Get all jobs to verify
-GET http://localhost:8082/api/jobs
-###
-
-GET http://localhost:8082/api/jobs/search?keyword=java
-
-####
-DELETE http://localhost:8082/api/jobs/2
+### Delete job (assuming ID 1)
+DELETE http://localhost:8082/api/jobs/1

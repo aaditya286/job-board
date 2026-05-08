@@ -1,0 +1,32 @@
+### Test search functionality
+
+### Search for jobs with keyword "java"
+GET http://localhost:8082/api/jobs/search?keyword=java
+
+###
+
+### Search for jobs with keyword "developer"
+GET http://localhost:8082/api/jobs/search?keyword=developer
+
+###
+
+### Search for jobs with keyword "bangalore"
+GET http://localhost:8082/api/jobs/search?keyword=bangalore
+
+###
+
+### Create a job first for testing
+POST http://localhost:8082/api/jobs
+Content-Type: application/json
+
+{
+  "title": "Java Developer",
+  "company": "TechCorp",
+  "location": "Bangalore",
+  "description": "Java development role"
+}
+
+###
+
+### Get all jobs to verify
+GET http://localhost:8082/api/jobs

@@ -1,6 +1,7 @@
 C:\Users\Aditya\Desktop\project\job board\src\main\java\com\jobboard\model\Job.java
 C:\Users\Aditya\Desktop\project\job board\src\main\java\com\jobboard\controller\BaseController.java
 C:\Users\Aditya\Desktop\project\job board\src\main\java\com\jobboard\controller\JobController.java
+C:\Users\Aditya\Desktop\project\job board\src\main\java\com\jobboard\service\JobService.java
 C:\Users\Aditya\Desktop\project\job board\src\main\java\com\jobboard\repository\JobRepository.java
 C:\Users\Aditya\Desktop\project\job board\src\main\java\com\jobboard\JobBoardApplication.java
 C:\Users\Aditya\Desktop\project\job board\src\main\java\com\jobboard\exception\GlobalExceptionHandler.java
