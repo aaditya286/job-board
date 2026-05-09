@@ -1,0 +1,33 @@
+### Test all endpoints after HTTP method mapping fix
+
+### Get all jobs (should work in browser now)
+GET http://localhost:8082/api/jobs
+
+### Create a job
+POST http://localhost:8082/api/jobs
+Content-Type: application/json
+
+{
+  "title": "Java Developer Intern",
+  "company": "TechCorp",
+  "description": "Java development role working on Spring Boot backend",
+  "stipend": "15000",
+  "location": "Bangalore"
+}
+
+### Search for jobs
+GET http://localhost:8082/api/jobs/search?keyword=java
+
+### Update job (assuming ID 1)
+PUT http://localhost:8082/api/jobs/1
+Content-Type: application/json
+
+{
+  "title": "Senior Java Developer",
+  "company": "Infosys",
+  "location": "Bangalore",
+  "description": "Updated job description"
+}
+
+### Delete job (assuming ID 1)
+DELETE http://localhost:8082/api/jobs/1

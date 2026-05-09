@@ -1,0 +1,44 @@
+### Create React Frontend Intern job
+POST http://localhost:8082/api/jobs
+Content-Type: application/json
+
+{
+  "title": "React Frontend Intern",
+  "company": "StartupXYZ",
+  "description": "Build and maintain React components for our web application",
+  "stipend": "12000",
+  "location": "Mumbai"
+}
+
+###
+
+### Create Data Analyst Intern job
+POST http://localhost:8082/api/jobs
+Content-Type: application/json
+
+{
+  "title": "Data Analyst Intern",
+  "company": "Analytics Co",
+  "description": "Analyze data and create reports using Python and SQL",
+  "stipend": "18000",
+  "location": "Hyderabad"
+}
+
+###
+
+### Create Backend Developer Intern job
+POST http://localhost:8082/api/jobs
+Content-Type: application/json
+
+{
+  "title": "Backend Developer Intern",
+  "company": "DevSolutions",
+  "description": "Work on Spring Boot REST APIs and MySQL database",
+  "stipend": "20000",
+  "location": "Bangalore"
+}
+
+###
+
+### Get all jobs to verify
+GET http://localhost:8082/api/jobs
